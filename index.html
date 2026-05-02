@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facade</title>
+<style>
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#faf6f0;color:#2c2c2c;max-width:600px;margin:80px auto;padding:0 20px;line-height:1.7;font-size:16px}
+h1{font-weight:400;font-size:2rem;margin-bottom:1rem}
+p{margin:1rem 0}
+.code{background:#f0ebe3;padding:2px 6px;border-radius:3px;font-family:monospace;font-size:.9em}
+.note{color:#666;font-size:.9rem;margin-top:2rem;padding-top:1rem;border-top:1px solid #e0d8cc}
+</style>
+</head>
+<body>
+<h1>Facade</h1>
+
+<p>This page shows one thing to most people and something else to specific clients.</p>
+
+<p>Your user agent:</p>
+<p id="ua" class="code"></p>
+
+<p>Right now you are seeing the default page. Change your user agent to <strong class="code">{{SWITCH_UA}}</strong> and you will see the alternate content.</p>
+
+<p>Malware and implants often use custom user agents to communicate with command and control servers. The server looks at the user agent and decides what to send back. This tool is an example of that.</p>
+
+<p class="note">Change your user agent to <strong class="code">{{SWITCH_UA}}</strong> to see the switch.</p>
+
+<script>document.getElementById('ua').textContent=navigator.userAgent;</script>
+</body>
+</html>

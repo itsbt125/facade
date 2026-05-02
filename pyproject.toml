@@ -1,0 +1,9 @@
+[project]
+name = "facade"
+version = "1.0.0"
+description = "Serve different content based on User-Agent header"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.100.0",
+    "uvicorn>=0.20.0",
+]
