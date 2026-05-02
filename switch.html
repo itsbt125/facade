@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facade - Alternate View</title>
+<style>
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#faf6f0;color:#2c2c2c;max-width:600px;margin:80px auto;padding:0 20px;line-height:1.7;font-size:16px}
+h1{font-weight:400;font-size:2rem;margin-bottom:1rem}
+p{margin:1rem 0}
+.code{background:#f0ebe3;padding:2px 6px;border-radius:3px;font-family:monospace;font-size:.9em}
+.note{color:#666;font-size:.9rem;margin-top:2rem;padding-top:1rem;border-top:1px solid #e0d8cc}
+</style>
+</head>
+<body>
+<h1>Facade - Alternate View</h1>
+
+<p>You are seeing the alternate content. Most visitors get the default page.</p>
+
+<p>Your user agent:</p>
+<p id="ua" class="code"></p>
+
+<p>It matches <strong class="code">{{SWITCH_UA}}</strong>, so the server sent you this instead of the default.</p>
+
+<p>This is how malware hides. A compromised machine sends a specific user agent, the server recognizes it, and sends back commands or payloads. Normal visitors see nothing suspicious.</p>
+
+<p class="note">Change your user agent back to see the default page.</p>
+
+<script>document.getElementById('ua').textContent=navigator.userAgent;</script>
+</body>
+</html>
